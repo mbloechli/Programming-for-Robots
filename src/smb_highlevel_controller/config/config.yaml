@@ -1,2 +1,3 @@
-topic: "/scan"
+topic_laser: "/scan"
+topic_pointcloud: "/rslidar_points"
 queue_size: 10
