@@ -2,5 +2,6 @@ build
 devel
 logs
 .catkin_tools/
+.vscode/
 
 # Access Token: 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
