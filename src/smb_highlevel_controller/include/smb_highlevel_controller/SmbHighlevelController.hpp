@@ -26,6 +26,8 @@ private:
 	ros::NodeHandle nodeHandle_;
 	ros::Subscriber subscriber_laser_;
 	ros::Subscriber subscriber_pointcloud_;
+	ros::Publisher publisher_twist_;
+	ros::Publisher publisher_rvizMarker_;
 
 	void topic_laser_Callback(const sensor_msgs::LaserScan data);
 	void topic_pointcloud_Callback(const sensor_msgs::PointCloud2 data);

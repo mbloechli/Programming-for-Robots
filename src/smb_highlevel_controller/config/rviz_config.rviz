@@ -77,7 +77,7 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
-    - Alpha: 1
+    - Alpha: 0.5
       Class: rviz/RobotModel
       Collision Enabled: false
       Enabled: true
@@ -175,6 +175,70 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        LF_WHEEL:
+          Value: true
+        LH_WHEEL:
+          Value: true
+        RF_WHEEL:
+          Value: true
+        RH_WHEEL:
+          Value: true
+        base_inertia:
+          Value: true
+        base_link:
+          Value: true
+        imu_link:
+          Value: true
+        lidar_mount_link:
+          Value: true
+        rslidar:
+          Value: true
+        rslidar_base_link:
+          Value: true
+        top:
+          Value: true
+      Marker Alpha: 1
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        base_link:
+          LF_WHEEL:
+            {}
+          LH_WHEEL:
+            {}
+          RF_WHEEL:
+            {}
+          RH_WHEEL:
+            {}
+          base_inertia:
+            {}
+          imu_link:
+            {}
+          lidar_mount_link:
+            {}
+          rslidar_base_link:
+            rslidar:
+              {}
+          top:
+            {}
+      Update Interval: 0
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: visualization_marker
+      Name: Marker
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -240,4 +304,4 @@ Window Geometry:
     collapsed: false
   Width: 1200
   X: 79
-  Y: 31
+  Y: 27
