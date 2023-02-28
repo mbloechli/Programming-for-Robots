@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+  <param name ="use_sim_time" value="true"/>
+
+  <include file="$(find smb_gazebo)/launch/smb_gazebo.launch">
+    <arg name="world" value="singlePillar" />
+    <arg name="laser_enabled" value="true" />
+    <arg name="laser_scan_min_height" value="-0.2" />
+    <arg name="laser_scan_max_height" value="1" />
+    <arg name="use_sim_time" value="true"/>
+  </include>
+
+  <node name="smb_highlevel_controller" pkg="smb_highlevel_controller" type="smb_highlevel_controller" output="screen">
+    <rosparam command="load" file="$(find smb_highlevel_controller)/config/config.yaml" />
+  </node>  
+
+  <node pkg="rqt_multiplot" type="rqt_multiplot" name="rqt_multiplot" args="--multiplot-run-all">
+  </node>
+
+  <node pkg="rosbag" type="play" name="player" output="screen" args=" --prefix=bag --loop --clock --rate=0.5 $(find smb_gazebo)/bag/smb_navigation.bag"/>
+
+</launch> 
