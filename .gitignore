@@ -3,5 +3,6 @@ devel
 logs
 .catkin_tools/
 .vscode/
+**/smb_navigation.bag
 
 # Access Token: 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
