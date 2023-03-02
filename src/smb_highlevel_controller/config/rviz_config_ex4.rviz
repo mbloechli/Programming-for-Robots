@@ -7,7 +7,6 @@ Panels:
         - /Global Options1
         - /PointCloud21
         - /TF1
-        - /TF1/Status1
       Splitter Ratio: 0.5
     Tree Height: 221
   - Class: rviz/Selection
@@ -126,8 +125,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 15.22695541381836
-        Min Value: -0.1780560314655304
+        Max Value: 13.174765586853027
+        Min Value: -2.46677303314209
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -146,7 +145,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.05000000074505806
       Style: Flat Squares
-      Topic: /bag/rslidar_points
+      Topic: /rslidar_points
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -156,6 +155,14 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        LF_WHEEL:
+          Value: true
+        LH_WHEEL:
+          Value: true
+        RF_WHEEL:
+          Value: true
+        RH_WHEEL:
+          Value: true
         base_inertia:
           Value: true
         base_link:
@@ -181,6 +188,14 @@ Visualization Manager:
       Tree:
         smb_top_view:
           base_link:
+            LF_WHEEL:
+              {}
+            LH_WHEEL:
+              {}
+            RF_WHEEL:
+              {}
+            RH_WHEEL:
+              {}
             base_inertia:
               {}
             imu_link:
