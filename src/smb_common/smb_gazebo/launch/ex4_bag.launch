@@ -27,7 +27,7 @@
     <remap from="robot_description" to="robot_description"/>
   </node>
 
-  <node pkg="rosbag" type="play" name="player" output="screen" args=" --prefix=bag --loop --clock --rate=0.5 $(find smb_gazebo)/bag/smb_navigation.bag"/>
+  <node pkg="rosbag" type="play" name="player" output="screen" args=" --loop --clock --rate=0.5 $(find smb_gazebo)/bag/smb_navigation.bag"/>
 
   <node pkg="tf" type="static_transform_publisher" name="smb_top_view" args="0 0 -2 0 0 0 smb_top_view base_link 100"/>
 
